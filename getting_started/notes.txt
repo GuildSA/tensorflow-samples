@@ -1,0 +1,70 @@
+
+------------------------------------------------------------------------
+
+ -- Based on: Getting Started With TensorFlow --
+
+https://www.tensorflow.org/get_started/get_started
+
+------------------------------------------------------------------------
+
+ -- Installing TensorFlow on Mac OS X --
+
+https://www.tensorflow.org/install/install_mac#run_a_short_tensorflow_program
+
+I used pip + Virtualenv
+
+
+ -- Useful Commands to check setup -- 
+
+python --version
+python3 --version
+python3
+
+
+
+ -- Step #1 Install pip --
+
+sudo easy_install pip
+sudo pip install --upgrade virtualenv
+
+
+ -- Step #2 Install virtualenv --
+
+sudo -H pip install --upgrade virtualenv
+virtualenv --system-site-packages ~/tensorflow
+
+
+ -- Step #3 Activate --
+
+source ~/tensorflow/bin/activate
+
+
+ -- Step #4 Download TensorFlow --
+
+pip3 install --upgrade tensorflow
+
+
+ -- Step #4 Test TensorFlow --
+
+source ~/tensorflow/bin/activate
+
+python3 learn_tf_1.py
+
+
+ -- Step #5 Shutdown TensorFlow --
+
+deactivate
+
+------------------------------------------------------------------------
+
+Tensors
+
+The central unit of data in TensorFlow is the tensor. A tensor consists 
+of a set of primitive values shaped into an array of any number of 
+dimensions. A tensor's rank is its number of dimensions. Here are some 
+examples of tensors:
+
+3 # a rank 0 tensor; this is a scalar with shape []
+[1. ,2., 3.] # a rank 1 tensor; this is a vector with shape [3]
+[[1., 2., 3.], [4., 5., 6.]] # a rank 2 tensor; a matrix with shape [2, 3]
+[[[1., 2., 3.]], [[7., 8., 9.]]] # a rank 3 tensor with shape [2, 1, 3]
